@@ -43,6 +43,11 @@
   .ghpros-form .double-field input,
   .ghpros-form .field input {
     width: 100%;
+    border: 1px solid var(--c-mid-grey);
+  }
+  .ghpros-form .double-field input[type="file"],
+  .ghpros-form .field input[type="file"] {
+    border: none;
   }
   .ghpros-form .required,
   .ghpros-form .required {

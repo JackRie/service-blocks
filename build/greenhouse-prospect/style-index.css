@@ -44,6 +44,11 @@
 .wp-block-serv-blocks-greenhouse-prospect .ghpros-form .double-field input,
 .wp-block-serv-blocks-greenhouse-prospect .ghpros-form .field input {
   width: 100%;
+  border: 1px solid var(--c-mid-grey);
+}
+.wp-block-serv-blocks-greenhouse-prospect .ghpros-form .double-field input[type=file],
+.wp-block-serv-blocks-greenhouse-prospect .ghpros-form .field input[type=file] {
+  border: none;
 }
 .wp-block-serv-blocks-greenhouse-prospect .ghpros-form .required,
 .wp-block-serv-blocks-greenhouse-prospect .ghpros-form .required {
