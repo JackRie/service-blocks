@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "serv-blocks/greenhouse-prospect",
+  "version": "0.1.0",
+  "title": "Greenhouse Prospect Block",
+  "description": "Greenhouse Prospect Form Call To Action",
+  "category": "widgets",
+  "textdomain": "serv-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "style": "file:./style-index.css"
+}
