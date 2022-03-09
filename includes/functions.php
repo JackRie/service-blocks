@@ -8,10 +8,10 @@ function ghpros_create_applicant() {
    
       $body = ghpros_setup_request_body($_POST, $_FILES);
       $url = "https://webhook.site/0d304a5b-b094-4144-b0f6-397bff7f8115?";
-      // $url = "https://harvest.greenhouse.io/v1/prospects"
-      // $credentials = get_option('ghpros-authorization');
-      // $b64_key = base64_encode($credentials . ':');
-      // $on_behalf_of = get_option('ghpros-on-behalf-of');
+    //   $url = "https://harvest.greenhouse.io/v1/prospects";
+      $credentials = get_option('ghpros-authorization');
+      $b64_key = base64_encode($credentials . ':');
+      $on_behalf_of = get_option('ghpros-on-behalf-of');
       $request  = new WP_Http();
       $response = $request->post( $url, array( 
         // 'headers' => array(
@@ -22,7 +22,6 @@ function ghpros_create_applicant() {
           'body' => $body
         ) );
         wp_send_json_success( __('Response OK', 'serv-blocks') );
-
     } 
     
     wp_send_json_error( 'You are not allowed to perform this action', 'serv-blocks' );

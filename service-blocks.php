@@ -27,7 +27,8 @@ class ServBlocks {
     function create_service_blocks_init() {
 
         $blocks = array(
-            'greenhouse-prospect'
+            'greenhouse-prospect',
+            'marketo-form-button'
         );
     
         foreach( $blocks as $block ) {
